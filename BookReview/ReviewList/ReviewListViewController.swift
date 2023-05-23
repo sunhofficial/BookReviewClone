@@ -7,13 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ReviewListViewController: UIViewController {
+    private lazy var presenter = ReviewListPresenter(viewController: self)
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    }
+    }   
 
 
 }
 
+extension ReviewListViewController : ReviewListProtocol {}
