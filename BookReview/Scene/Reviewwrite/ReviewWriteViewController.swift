@@ -14,8 +14,10 @@ final class ReviewWriteViewController : UIViewController, ReviewWriteProtocol{
         btn.setTitleColor(.tertiaryLabel, for: .normal)
         btn.contentHorizontalAlignment = .left
         btn.titleLabel?.font = .systemFont(ofSize: 23.0, weight: .bold)
+        btn.addTarget(self, action: #selector(didTapbookTitleBtn), for: .touchUpInside)
         return btn
     }()
+    
     private lazy var contentsTextView : UITextView = {
         let textView = UITextView()
         textView.textColor = .tertiaryLabel
@@ -77,6 +79,10 @@ extension ReviewWriteViewController{
             $0.bottom.equalTo(view.safeAreaLayoutGuide)
         }
     }
+    func presentSearchBookController() {
+        let vc = UINavigationController(rootViewController: SearchBookViewController())
+        present(vc,animated: true)
+    }
 }
 extension ReviewWriteViewController : UITextViewDelegate {
     func textViewDidBeginEditing(_ textView: UITextView) {
@@ -93,5 +99,8 @@ private extension ReviewWriteViewController{
     @objc func didTapRightBarButton(){
         // TODO : UserDefaults에 유ㅓ저가 작성한 도서리뷰 작성하기.
         presenter.didTapRightBarButton()
+    }
+    @objc func didTapbookTitleBtn(){
+        presenter.didTapbookTitleBtn()
     }
 }
