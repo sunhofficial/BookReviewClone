@@ -16,6 +16,9 @@ protocol ReviewWriteProtocol{
 }
 final class ReviewWritePresenter{
     private let vc : ReviewWriteProtocol
+    private let userDefaultManager = UserDefaultManager()
+    private var book : Book?
+    let contentsTextViewPlaceHolderText = "내용을 입력해주세요"
     init(vc: ReviewWriteProtocol) {
         self.vc = vc
     }
@@ -27,7 +30,10 @@ final class ReviewWritePresenter{
     func didTapLeftBarButton(){
         vc.showCloseAlertSheet()
     }
-    func didTapRightBarButton(){
+    func didTapRightBarButton(contentsText : String){
+        guard let book = book, contentsText != contentsTextViewPlaceHolderText else { return}
+        let bookreview = BookReview(title: book.title, contents: contentsText , imgURL: book.imageURL)
+        userDefaultManager.setReviews(bookreview)
         vc.close()
     }
     func didTapbookTitleBtn(){
@@ -36,6 +42,7 @@ final class ReviewWritePresenter{
 }
 extension ReviewWritePresenter : SearchBookDelegate {
     func selectBook(_ book: Book) {
+        self.book = book
         vc.updateViews(title: book.title, imageUrl: book.imageURL!)
     }
 }
