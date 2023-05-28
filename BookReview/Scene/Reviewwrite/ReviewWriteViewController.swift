@@ -5,6 +5,7 @@
 //  Created by 235 on 2023/05/28.
 //
 import SnapKit
+import Kingfisher
 import UIKit
 final class ReviewWriteViewController : UIViewController, ReviewWriteProtocol{
     private lazy var presenter = ReviewWritePresenter(vc: self)
@@ -80,8 +81,13 @@ extension ReviewWriteViewController{
         }
     }
     func presentSearchBookController() {
-        let vc = UINavigationController(rootViewController: SearchBookViewController())
+        let vc = UINavigationController(rootViewController: SearchBookViewController(searchBookDelegate: presenter))
         present(vc,animated: true)
+    }
+    func updateViews(title : String, imageUrl : URL){
+        bookTitleButton.setTitle(title, for: .normal)
+        bookTitleButton.setTitleColor(.label, for: .normal)
+        imageView.kf.setImage(with: imageUrl)
     }
 }
 extension ReviewWriteViewController : UITextViewDelegate {
