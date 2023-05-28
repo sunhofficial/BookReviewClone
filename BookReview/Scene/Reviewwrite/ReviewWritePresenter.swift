@@ -16,17 +16,18 @@ protocol ReviewWriteProtocol{
 }
 final class ReviewWritePresenter{
     private let vc : ReviewWriteProtocol
-    private let userDefaultManager = UserDefaultManager()
-    private var book : Book?
+    private let userDefaultManager : UserDefaultManagerProtocol
+    var book : Book? //test를 위해 private 해지
     let contentsTextViewPlaceHolderText = "내용을 입력해주세요"
-    init(vc: ReviewWriteProtocol) {
+    init(vc: ReviewWriteProtocol, userDefaultsManager : UserDefaultManagerProtocol = UserDefaultManager()) {
         self.vc = vc
+        self.userDefaultManager = userDefaultsManager
     }
     func viewDidLoad(){
         vc.setupNavigationBar()
         vc.setupViews()
     }
-   
+    
     func didTapLeftBarButton(){
         vc.showCloseAlertSheet()
     }

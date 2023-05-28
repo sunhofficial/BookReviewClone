@@ -17,12 +17,13 @@
 		C75C86F42A232F1F0062A6CD /* BookSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C86F32A232F1F0062A6CD /* BookSearchManager.swift */; };
 		C75C86F72A2343B60062A6CD /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C86F62A2343B60062A6CD /* UserDefaultManager.swift */; };
 		C75C86F92A2343C80062A6CD /* BookReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C86F82A2343C80062A6CD /* BookReview.swift */; };
+		C75C86FB2A2381850062A6CD /* ReviewWritePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75C86FA2A2381850062A6CD /* ReviewWritePresenterTests.swift */; };
 		C77321762A1C6F3800FFA948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77321752A1C6F3800FFA948 /* AppDelegate.swift */; };
 		C77321782A1C6F3800FFA948 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77321772A1C6F3800FFA948 /* SceneDelegate.swift */; };
 		C773217A2A1C6F3800FFA948 /* ReviewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77321792A1C6F3800FFA948 /* ReviewListViewController.swift */; };
 		C773217F2A1C6F3900FFA948 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C773217E2A1C6F3900FFA948 /* Assets.xcassets */; };
 		C77321822A1C6F3900FFA948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C77321802A1C6F3900FFA948 /* LaunchScreen.storyboard */; };
-		C773218D2A1C6F3900FFA948 /* BookReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C773218C2A1C6F3900FFA948 /* BookReviewTests.swift */; };
+		C773218D2A1C6F3900FFA948 /* ReviewListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C773218C2A1C6F3900FFA948 /* ReviewListPresenterTests.swift */; };
 		C77321972A1C6F3900FFA948 /* BookReviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77321962A1C6F3900FFA948 /* BookReviewUITests.swift */; };
 		C77321992A1C6F3900FFA948 /* BookReviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77321982A1C6F3900FFA948 /* BookReviewUITestsLaunchTests.swift */; };
 		C77321A72A1C6F7C00FFA948 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C77321A62A1C6F7C00FFA948 /* SnapKit */; };
@@ -59,6 +60,8 @@
 		C75C86F32A232F1F0062A6CD /* BookSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchManager.swift; sourceTree = "<group>"; };
 		C75C86F62A2343B60062A6CD /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 		C75C86F82A2343C80062A6CD /* BookReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReview.swift; sourceTree = "<group>"; };
+		C75C86FA2A2381850062A6CD /* ReviewWritePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWritePresenterTests.swift; sourceTree = "<group>"; };
+		C75C86FC2A2391BC0062A6CD /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		C77321722A1C6F3800FFA948 /* BookReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C77321752A1C6F3800FFA948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C77321772A1C6F3800FFA948 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +70,7 @@
 		C77321812A1C6F3900FFA948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C77321832A1C6F3900FFA948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C77321882A1C6F3900FFA948 /* BookReviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookReviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C773218C2A1C6F3900FFA948 /* BookReviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewTests.swift; sourceTree = "<group>"; };
+		C773218C2A1C6F3900FFA948 /* ReviewListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListPresenterTests.swift; sourceTree = "<group>"; };
 		C77321922A1C6F3900FFA948 /* BookReviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookReviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C77321962A1C6F3900FFA948 /* BookReviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewUITests.swift; sourceTree = "<group>"; };
 		C77321982A1C6F3900FFA948 /* BookReviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -153,6 +156,7 @@
 		C77321692A1C6F3800FFA948 = {
 			isa = PBXGroup;
 			children = (
+				C75C86FC2A2391BC0062A6CD /* TestPlan.xctestplan */,
 				C77321742A1C6F3800FFA948 /* BookReview */,
 				C773218B2A1C6F3900FFA948 /* BookReviewTests */,
 				C77321952A1C6F3900FFA948 /* BookReviewUITests */,
@@ -188,7 +192,8 @@
 		C773218B2A1C6F3900FFA948 /* BookReviewTests */ = {
 			isa = PBXGroup;
 			children = (
-				C773218C2A1C6F3900FFA948 /* BookReviewTests.swift */,
+				C773218C2A1C6F3900FFA948 /* ReviewListPresenterTests.swift */,
+				C75C86FA2A2381850062A6CD /* ReviewWritePresenterTests.swift */,
 			);
 			path = BookReviewTests;
 			sourceTree = "<group>";
@@ -372,7 +377,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C773218D2A1C6F3900FFA948 /* BookReviewTests.swift in Sources */,
+				C75C86FB2A2381850062A6CD /* ReviewWritePresenterTests.swift in Sources */,
+				C773218D2A1C6F3900FFA948 /* ReviewListPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

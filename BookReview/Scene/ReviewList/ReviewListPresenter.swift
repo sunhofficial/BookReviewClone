@@ -16,10 +16,11 @@ protocol ReviewListProtocol{
 }
 final class ReviewListPresenter : NSObject{
     private let viewController : ReviewListProtocol
-    private let userdDefaultManager = UserDefaultManager()
+    private let userdDefaultManager : UserDefaultManagerProtocol
     private var review : [BookReview] = []
-    init(viewController: ReviewListProtocol) {
+    init(viewController: ReviewListProtocol, userdDefaultManager : UserDefaultManagerProtocol = UserDefaultManager()) {
         self.viewController = viewController
+        self.userdDefaultManager = userdDefaultManager
     }
     func viewDidLoad(){
         viewController.setupNavigationBar()
