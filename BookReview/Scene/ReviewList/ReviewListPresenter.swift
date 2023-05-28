@@ -8,7 +8,9 @@
 import UIKit
 protocol ReviewListProtocol{
     func setupNavigationBar()
+    func presentToReviewWriteViewController()
     func setupVIews()
+    func reloadTableView()
 }
 final class ReviewListPresenter : NSObject{
     private let viewController : ReviewListProtocol
@@ -18,6 +20,12 @@ final class ReviewListPresenter : NSObject{
     func viewDidLoad(){
         viewController.setupNavigationBar()
         viewController.setupVIews()
+    }
+    func viewWillAppear(){
+        viewController.reloadTableView()
+    }
+    func didTaprightBarbuttonItem(){
+        viewController.presentToReviewWriteViewController()
     }
 }
 extension ReviewListPresenter: UITableViewDataSource{
